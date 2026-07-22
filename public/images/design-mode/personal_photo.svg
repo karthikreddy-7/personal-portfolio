@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1120" viewBox="0 0 840 1120">
+  <rect width="840" height="1120" fill="#e8e4dc"/>
+  <text
+    x="420"
+    y="560"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-weight="300"
+    font-size="180"
+    letter-spacing="-6"
+    fill="#1a1a1a"
+  >kr<tspan fill="#1f3a5f">.</tspan></text>
+</svg>
