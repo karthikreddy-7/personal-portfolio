@@ -44,10 +44,9 @@ pnpm start      # serve the production build
 
 Replace `public/images/design-mode/personal_photo.svg` with your portrait (PNG recommended, ~3:4). Update the `src` in `app/page.tsx` if the filename changes.
 
-## Resumes
+## Resume
 
 - `/Karthik_Reddy_Resume_AI.pdf`
-- `/Karthik_Reddy_Resume_Java.pdf`
 
 ## License
 
