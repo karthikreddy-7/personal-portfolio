@@ -27,26 +27,7 @@ app/
     ArchitectureDiagram.tsx   optional inline SVG diagrams, per slug
   error.tsx / not-found.tsx / global-error.tsx
 public/                   images, fonts, resumes, web manifest
-```
-
-Content source of truth for bio facts: `C:\karthik\projects\profile\MASTER.md` (kept outside this repo).
-
-## Develop
-
-```bash
-pnpm install
-pnpm dev        # http://localhost:3000
-pnpm build      # production build (type-checks; fails on TS errors)
-pnpm start      # serve the production build
-```
-
-## Personal photo
-
-Replace `public/images/design-mode/personal_photo.svg` with your portrait (PNG recommended, ~3:4). Update the `src` in `app/page.tsx` if the filename changes.
-
-## Resume
-
-- `/Karthik_Reddy_Resume_AI.pdf`
+``
 
 ## License
 
