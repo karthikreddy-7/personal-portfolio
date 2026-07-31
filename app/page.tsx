@@ -52,6 +52,17 @@ const WORK = [
 
 const PROJECTS = [
   {
+    name: "Choreo",
+    platform: "",
+    slug: "choreo",
+    descShort: "Production layer for LangGraph — multi-agent systems with budgets, guardrails, and evals.",
+    type: "Open source",
+    year: "2026",
+    desc: "Open-source production layer for LangGraph. Build multi-agent AI systems with budgets, guardrails, retries, evals, and observability. Early, building in public.",
+    stack: ["Python", "LangGraph", "Multi-agent", "Evals", "Observability"],
+    links: [{ label: "github", href: "https://github.com/choreo-ai/choreo" }],
+  },
+  {
     name: "CodeRAG",
     platform: "",
     slug: "coderag",
