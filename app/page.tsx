@@ -780,6 +780,18 @@ export default function BetaPage() {
               <span className="accent">Nomura</span>
               . I build backend systems and production AI — high-throughput
               Java services, RAG, agents, and MCP tool integrations.
+              <span className="block mt-4 muted">
+                Currently building{" "}
+                <a
+                  href="https://github.com/choreo-ai/choreo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="accent-link accent"
+                >
+                  Choreo
+                </a>
+                .
+              </span>
               <span className="hidden sm:block mt-4 muted">
                 Looking for Backend Engineer and AI Engineer roles
                 in Hyderabad or Remote-India.
