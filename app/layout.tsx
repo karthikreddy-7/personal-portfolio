@@ -10,9 +10,15 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Karthik Reddy · Backend & AI",
+  metadataBase: new URL("https://basupallykarthikreddy.vercel.app"),
+  title: "Karthik Reddy · AI Engineer",
   description:
-    "Software engineer at Nomura — backend systems and production AI (RAG, agents, MCP). Open to Backend Engineer and AI Engineer roles in Hyderabad or Remote-India.",
+    "AI Engineer — multi-agent orchestration, hybrid RAG and evals in production. Lead Software Engineer at Persistent Systems; ex-Nomura (GenAI platform, ~15k daily users).",
+  openGraph: {
+    title: "Karthik Reddy · AI Engineer",
+    description: "Multi-agent orchestration, hybrid RAG and evals in production.",
+    url: "https://basupallykarthikreddy.vercel.app",
+  },
 }
 
 export default function RootLayout({

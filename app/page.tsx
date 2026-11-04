@@ -8,33 +8,43 @@ import { hasProjectDetail } from "./projects/projects-data"
 
 const WORK = [
   {
+    company: "Persistent Systems",
+    companyShort: "Persistent",
+    role: "Lead Software Engineer",
+    period: "Sep 2026 – Present",
+    desc: "Architecting an agentic orchestration harness on GitHub Copilot custom agents. One orchestrator delegates bounded tasks to specialist sub-agents, with MCP tools, hand-offs, human approval gates, and least-privilege guardrails.",
+    descShort: "Multi-agent orchestration harness: orchestrator + specialist sub-agents, MCP, human-in-the-loop.",
+    stack: ["Copilot custom agents", "Multi-agent", "MCP", "Guardrails", "YAML"],
+    current: true,
+  },
+  {
     company: "Nomura",
     companyShort: "Nomura",
-    role: "Software Engineer",
-    period: "Jul 2024 – Present",
-    desc: "Started in Global Markets IT on Java and Spring Boot systems for trade reporting and reconciliation. Owned several Apache Camel adapters end to end, and sped up a trade-persistence service handling 60M+ records from ~3s inserts to ~40ms. Built Sonar AutoFix — an LLM tool in CI that auto-fixes SonarQube issues (~40% cleared; Nomura Star award). Now build production AI: RAG over enterprise docs, agent workflows, web search, and MCP tools that let models use Confluence, Jira, and internal systems.",
-    descShort: "Backend (Java/Camel, 60M+ trades) → production AI (RAG, agents, MCP). Sonar AutoFix + Nomura Star.",
+    role: "Senior Software Engineer",
+    period: "Jul 2024 – Aug 2026",
+    desc: "Built retrieval and agents for Chinou, Nomura's GenAI platform on AWS Bedrock used by ~15k people daily. Hybrid search (BM25 + PGVector, RRF, cross-encoder re-ranking) over ~10k docs, a RAG eval pipeline so every change is measured, and LangGraph + MCP agents into Confluence and Jira. Got there via Sonar AutoFix — an LLM bot in CI that cleared ~40% of SonarQube issues (Nomura Star). Started on Java/Camel trade systems (60M+ records, ~3s → ~40ms inserts).",
+    descShort: "Hybrid RAG + evals + LangGraph/MCP agents for a GenAI platform with ~15k daily users. Sonar AutoFix (Nomura Star).",
     stack: [
-      "Java",
-      "Spring Boot",
-      "Apache Camel",
       "Python",
       "AWS Bedrock",
-      "LangChain",
       "LangGraph",
-      "RAG",
+      "LangChain",
       "MCP",
-      "Docker",
+      "PGVector",
+      "RAG evals",
+      "Langfuse",
+      "FastAPI",
+      "Java",
     ],
-    current: true,
+    current: false,
   },
   {
     company: "Techwondoe",
     companyShort: "Techwondoe",
     role: "Full-Stack Developer Intern",
     period: "Apr 2024 – Jul 2024",
-    desc: "Built and shipped a multi-tenant task management backend with NestJS, TypeORM, and PostgreSQL. Added JWT auth, role-based access, solid input validation, and OpenAPI docs. Held up under load testing; received a full-time offer (chose Nomura).",
-    descShort: "Shipped multi-tenant task APIs with NestJS, JWT, and RBAC. Full-time offer (declined).",
+    desc: "Shipped a multi-tenant task-management backend (NestJS, PostgreSQL) with JWT auth and RBAC. Got a full-time offer.",
+    descShort: "Multi-tenant task APIs with NestJS, JWT, and RBAC. Full-time offer.",
     stack: ["NestJS", "TypeORM", "PostgreSQL", "JWT", "Swagger"],
     current: false,
   },
@@ -43,8 +53,8 @@ const WORK = [
     companyShort: "Wizergos",
     role: "Software Engineer Intern",
     period: "May 2023 – Mar 2024",
-    desc: "Worked on a customer-facing chatbot in Bengaluru (two stints). Migrated it from AngularJS to React, wired up auth and data APIs, and wrote 500+ tests. Faster responses and fewer UI bugs in production.",
-    descShort: "Migrated chatbot AngularJS → React; APIs + 500+ tests; faster, more reliable UI.",
+    desc: "Migrated a customer-facing chatbot from AngularJS to React and wrote 500+ tests.",
+    descShort: "Chatbot AngularJS → React; 500+ tests.",
     stack: ["React", "AngularJS", "REST APIs", "JavaScript", "Testing"],
     current: false,
   },
@@ -52,13 +62,24 @@ const WORK = [
 
 const PROJECTS = [
   {
+    name: "Agentic Orchestration Harness",
+    platform: "",
+    slug: "agentic-orchestration-harness",
+    descShort: "Orchestrator + specialist sub-agents with allow-listed routing, MCP, and human approval gates.",
+    type: "Open source",
+    year: "2026",
+    desc: "Public version of my Persistent work. A hierarchical tree of Copilot custom agents: each caller allow-lists its children, sub-agents report a structured status, and edits stay behind least-privilege tools and human approval.",
+    stack: ["Copilot custom agents", "Multi-agent", "MCP", "YAML", "Guardrails"],
+    links: [{ label: "github", href: "https://github.com/karthikreddy-7/Agentic-Orchestration-Harness" }],
+  },
+  {
     name: "Choreo",
     platform: "",
     slug: "choreo",
     descShort: "Production layer for LangGraph — multi-agent systems with budgets, guardrails, and evals.",
     type: "Open source",
     year: "2026",
-    desc: "Open-source production layer for LangGraph. Build multi-agent AI systems with budgets, guardrails, retries, evals, and observability. Early, building in public.",
+    desc: "Production layer for LangGraph: budgets, guardrails, retries, evals, and observability for multi-agent systems. Early, building in public.",
     stack: ["Python", "LangGraph", "Multi-agent", "Evals", "Observability"],
     links: [{ label: "github", href: "https://github.com/choreo-ai/choreo" }],
   },
@@ -69,7 +90,7 @@ const PROJECTS = [
     descShort: "Search code by structure (methods + call graphs), not random text chunks.",
     type: "Personal project",
     year: "2025",
-    desc: "Most RAG tools treat source code like plain text. CodeRAG indexes methods and how they call each other, so search follows real code structure. Includes APIs and a simple chat UI.",
+    desc: "Code isn't prose. CodeRAG indexes method signatures and call graphs, so retrieval follows real code structure instead of arbitrary chunks. FastAPI service + chat UI.",
     stack: ["Python", "FastAPI", "React", "TypeScript", "ChromaDB", "Sentence Transformers"],
     links: [{ label: "github", href: "https://github.com/karthikreddy-7/coderag" }],
   },
@@ -80,7 +101,7 @@ const PROJECTS = [
     descShort: "CI bot that reads SonarQube issues and opens merge requests with fixes.",
     type: "Internal platform",
     year: "2025",
-    desc: "Runs inside GitLab CI. When SonarQube flags code smells or complexity, an LLM proposes a fix and opens an MR for review. Cleared about 40% of team issues and won a Nomura Star award.",
+    desc: "Agentic LLM workflow in GitLab CI: reads SonarQube findings, writes the fix, opens an MR. Cleared ~40% of issues; Nomura Star award.",
     stack: ["Python", "LLMs", "javalang", "GitLab CI", "Docker", "SonarQube"],
     links: [],
   },
@@ -91,7 +112,7 @@ const PROJECTS = [
     descShort: "MCP server so an AI assistant can check logs, metrics, and tickets for you.",
     type: "Internal tooling",
     year: "2025",
-    desc: "A small MCP server I built for myself: ask Claude Code in plain language to pull logs over SSH, check Tomcat, read Grafana, or look up GitLab/Jira — instead of jumping across tools by hand.",
+    desc: "FastMCP server that lets an AI assistant pull logs over SSH, check Tomcat, read Grafana, and look up GitLab/Jira in plain language.",
     stack: ["Python", "FastMCP", "MCP", "SSH", "Grafana", "GitLab API"],
     links: [],
   },
@@ -102,7 +123,7 @@ const PROJECTS = [
     descShort: "Generate a tailored resume from your profile + a job description.",
     type: "Personal project",
     year: "2025",
-    desc: "You paste your background and a job description; it drafts a customized CV you can edit in the browser. Spring Boot API, React UI, and a Python AI service, all Dockerized.",
+    desc: "Paste your background and a job description; get an editable tailored CV. Spring Boot API, React UI, Python AI service.",
     stack: ["Java 17", "Spring Boot", "React", "TypeScript", "Python", "Docker"],
     links: [{ label: "github", href: "https://github.com/karthikreddy-7/CraftMyCV" }],
   },
@@ -113,7 +134,7 @@ const PROJECTS = [
     descShort: "Final-year project: ML for agriculture, with a live web demo.",
     type: "Academic project",
     year: "2024",
-    desc: "College capstone using ML (including CNNs) for agriculture insights. React front end, Django back end, public demo online.",
+    desc: "Capstone: CNN-based agriculture insights. React + Django, live demo.",
     stack: ["React", "Django", "Machine Learning", "CNN", "Python"],
     links: [
       { label: "github", href: "https://github.com/karthikreddy-7/AGRIAI-IMPROVED" },
@@ -127,7 +148,7 @@ const PROJECTS = [
     descShort: "RFID student cards for shuttle payments, plus web tracking.",
     type: "Academic project",
     year: "2023",
-    desc: "Campus shuttle system: tap RFID ID cards to pay, recharge and check balance on the web, and track buses. Hardware on Arduino/ESP8266; site on PHP/MySQL. About 50–60% faster than older payment methods on campus.",
+    desc: "Tap RFID student cards to pay for campus shuttles; recharge and track buses on the web. ~50–60% faster than the old payment flow.",
     stack: ["IoT", "Arduino", "ESP8266", "RFID", "PHP", "MySQL"],
     links: [
       { label: "github", href: "https://github.com/karthikreddy-7/Smart-Shuttle-System-An-IOT-Machine-Learning-Based-Approach" },
@@ -754,7 +775,7 @@ export default function BetaPage() {
                   so the comma gaps between keywords read double-wide. */}
               <div className="hidden sm:block mt-5 mono text-[13px] muted leading-[1.7] [word-spacing:-0.5ch]">
                 <p>
-                  <span className="accent">+</span> Backend, AI, Enterprise
+                  <span className="accent">+</span> Agents, RAG, Evals
                 </p>
                 <p>
                   <span className="accent">+</span> Hyderabad, India
@@ -769,17 +790,19 @@ export default function BetaPage() {
               {/* pb-[2px]: the + glyph's ink sits ~1px below its line box's
                   center (measured), so bias the box to optically center it. */}
               <span className="accent shrink-0 w-9 h-9 pb-[2px] rounded-xl bg-[#f4f1ec] ring-1 ring-black/10 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.2)] grid place-items-center text-[20px] leading-none">+</span>
-              <span>Open to Backend Engineer &amp; AI Engineer roles.</span>
+              <span>AI Engineer · agents &amp; RAG in production.</span>
             </p>
 
             {/* Full description on every breakpoint (the phone's Notion-style
                 page body); the roles sentence is sm+ only — phones carry it
                 in the hero-open line instead. */}
             <div className="hero-desc display font-light text-[16px] sm:text-[clamp(16px,1.7vw,20px)] mt-0 sm:mt-7 lg:mt-8 leading-[1.5] max-w-[44ch]">
-              Software engineer at{" "}
-              <span className="accent">Nomura</span>
-              . I build backend systems and production AI — high-throughput
-              Java services, RAG, agents, and MCP tool integrations.
+              AI Engineer. Lead Software Engineer at{" "}
+              <span className="accent">Persistent</span>
+              , building multi-agent systems. Before that, hybrid RAG and agents
+              for a GenAI platform with{" "}
+              <span className="accent">~15k daily users</span>
+              .
               <span className="block mt-4 muted">
                 Currently building{" "}
                 <a
@@ -791,10 +814,6 @@ export default function BetaPage() {
                   Choreo
                 </a>
                 .
-              </span>
-              <span className="hidden sm:block mt-4 muted">
-                Looking for Backend Engineer and AI Engineer roles
-                in Hyderabad or Remote-India.
               </span>
             </div>
           </div>
@@ -860,7 +879,7 @@ export default function BetaPage() {
               <li
                 key={p.name}
                 id={`project-${p.slug}`}
-                className={`scroll-mt-20 grid grid-cols-1 xs:grid-cols-[clamp(80px,14vw,140px)_1fr_clamp(140px,22vw,240px)] lg:grid-cols-[140px_1fr_240px] gap-3 xs:gap-6 lg:gap-12 py-4 xs:py-6 lg:py-8 first:pt-2 xs:first:pt-3 lg:first:pt-4 ${
+                className={`scroll-mt-20 -mx-3 px-3 rounded-lg transition-colors duration-200 hover:bg-[rgba(31,58,95,0.035)] grid grid-cols-1 xs:grid-cols-[clamp(80px,14vw,140px)_1fr_clamp(140px,22vw,240px)] lg:grid-cols-[140px_1fr_240px] gap-3 xs:gap-6 lg:gap-12 py-4 xs:py-6 lg:py-8 first:pt-2 xs:first:pt-3 lg:first:pt-4 ${
                   i !== PROJECTS.length - 1 ? "border-b rule" : ""
                 }`}
               >
@@ -1103,20 +1122,19 @@ export default function BetaPage() {
               rhythm: status meta · heading + copy · Links. */}
           <div className="grid grid-cols-1 xs:grid-cols-[clamp(80px,14vw,140px)_1fr_clamp(140px,22vw,240px)] lg:grid-cols-[140px_1fr_240px] gap-3 xs:gap-6 lg:gap-12 py-5 xs:py-8 lg:py-10 pt-3 xs:pt-4 lg:pt-6">
             <div className="mono text-[12px] xs:text-[13px] leading-none flex xs:flex-col items-start gap-3 xs:gap-2 xs:pt-2 lg:pt-[10px]">
-              <span className="accent">Open to work</span>
-              <span className="muted">Hyderabad / Remote-India</span>
+              <span className="accent">Say hi</span>
+              <span className="muted">Hyderabad, India</span>
             </div>
             <div>
               <h3 className="display text-[21px] xs:text-[26px] lg:text-3xl font-light tracking-tight leading-tight">
-                Hey! I&rsquo;m looking for a role<span className="accent">.</span>
+                Let&rsquo;s talk agents<span className="accent">.</span>
               </h3>
               <p className="mt-2 xs:mt-5 leading-relaxed text-[14px] xs:text-[15px] max-w-[58ch] mono">
-                Open to Backend Engineer and AI Engineer roles — real production systems, not demos. Hyderabad or Remote-India.
+                Open to AI Engineer conversations — production agents, retrieval, and evals.
               </p>
               <p className="mt-3 xs:mt-4 leading-relaxed text-[14px] xs:text-[15px] mono">
-                Please reach out to{" "}
                 <a href="mailto:basupallykarthikreddy@gmail.com" className="accent-link accent">
-                  @basupallykarthikreddy@gmail.com
+                  basupallykarthikreddy@gmail.com
                 </a>
               </p>
             </div>
