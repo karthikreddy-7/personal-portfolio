@@ -191,46 +191,11 @@ const BLOGS = [
     blurb: "A free, practical path from AI demos to production systems: LLMs, RAG, embeddings, agents, and MCP.",
   },
   {
-    title: "Socks, Slides, and a Night I'll Never Forget",
-    date: "Apr 2026",
-    tag: "Personal",
-    href: "https://medium.com/@basupallykarthikreddy/socks-slides-and-a-night-ill-never-forget-4f2bbd530c73",
-    blurb: "A late-night ride story — small moments that stick.",
-  },
-  {
-    title: "Documenting my life · S1E1",
-    date: "Feb 2026",
-    tag: "Personal",
-    href: "https://medium.com/@basupallykarthikreddy/documenting-my-life-s1e1https-miro-medium-com-v2-resize-fit-440-0-hoocetx-ysaeylr-jpg-32854c41dd93",
-    blurb: "First episode of documenting life as it happens.",
-  },
-  {
     title: "I Relearned Java Like a Backend Engineer (Not Like a Beginner)",
     date: "Jan 2026",
     tag: "Java",
     href: "https://medium.com/@basupallykarthikreddy/i-relearned-java-like-a-backend-engineer-not-like-a-beginner-59e57f13f99a",
     blurb: "How I approached Java again with production backend work in mind.",
-  },
-  {
-    title: "The Placement Playbook: Navigating Campus Placements",
-    date: "Aug 2024",
-    tag: "Career",
-    href: "https://medium.com/@basupallykarthikreddy/the-placement-playbook-navigating-the-campus-placement-journey-5bcf5377bb69",
-    blurb: "Practical notes from the campus placement journey — prep and process.",
-  },
-  {
-    title: "TCS NQT 2024 Syllabus and Coding Questions to Practice",
-    date: "Jan 2024",
-    tag: "Coding",
-    href: "https://medium.com/@basupallykarthikreddy/tcs-nqt-2024-syllabus-and-coding-questions-to-be-practiced-c9808be3ad8a",
-    blurb: "Syllabus overview and coding problems worth practicing for TCS NQT 2024.",
-  },
-  {
-    title: "Blind 75 Competitive Coding Problems With Solutions (Java)",
-    date: "Jan 2024",
-    tag: "Coding",
-    href: "https://medium.com/@basupallykarthikreddy/blind-75-competitive-coding-problems-with-solutions-java-15c0d5d5bb40",
-    blurb: "A Java walkthrough of the classic Blind 75 problem set.",
   },
 ]
 
