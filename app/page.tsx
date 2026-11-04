@@ -741,9 +741,7 @@ export default function BetaPage() {
               the .hero-grid grid-template-areas in the style block above. */}
           <div className="hero-grid">
             <h1 className="hero-name display font-light leading-[0.95] sm:leading-[0.92] tracking-tight text-[clamp(34px,11vw,48px)] sm:text-[clamp(52px,10vw,120px)]">
-              Hi! I&rsquo;m Karthik{" "}
-              <br />
-              Reddy<span className="accent">.</span>
+              Hi! I&rsquo;m Karthik<span className="accent">.</span>
             </h1>
 
             <div className="hero-photo-block pt-1 sm:pt-3 lg:pt-4">
