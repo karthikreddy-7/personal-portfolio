@@ -197,6 +197,27 @@ const BLOGS = [
     href: "https://medium.com/@basupallykarthikreddy/i-relearned-java-like-a-backend-engineer-not-like-a-beginner-59e57f13f99a",
     blurb: "How I approached Java again with production backend work in mind.",
   },
+  {
+    title: "The Placement Playbook: Navigating Campus Placements",
+    date: "Aug 2024",
+    tag: "Career",
+    href: "https://medium.com/@basupallykarthikreddy/the-placement-playbook-navigating-the-campus-placement-journey-5bcf5377bb69",
+    blurb: "Practical notes from the campus placement journey — prep and process.",
+  },
+  {
+    title: "TCS NQT 2024 Syllabus and Coding Questions to Practice",
+    date: "Jan 2024",
+    tag: "Coding",
+    href: "https://medium.com/@basupallykarthikreddy/tcs-nqt-2024-syllabus-and-coding-questions-to-be-practiced-c9808be3ad8a",
+    blurb: "Syllabus overview and coding problems worth practicing for TCS NQT 2024.",
+  },
+  {
+    title: "Blind 75 Competitive Coding Problems With Solutions (Java)",
+    date: "Jan 2024",
+    tag: "Coding",
+    href: "https://medium.com/@basupallykarthikreddy/blind-75-competitive-coding-problems-with-solutions-java-15c0d5d5bb40",
+    blurb: "A Java walkthrough of the classic Blind 75 problem set.",
+  },
 ]
 
 const LINKS = [
