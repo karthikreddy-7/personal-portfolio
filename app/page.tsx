@@ -184,6 +184,13 @@ const EDUCATION = [
 // Curated Medium posts — newest first. Add new ones here as you publish.
 const BLOGS = [
   {
+    title: "AI Engineering Roadmap: A Free Playbook for Builders",
+    date: "Aug 2026",
+    tag: "AI Engineering",
+    href: "https://medium.com/@basupallykarthikreddy/ai-engineering-roadmap-a-free-playbook-for-builders-51b912d9b8b1",
+    blurb: "A free, practical path from AI demos to production systems: LLMs, RAG, embeddings, agents, and MCP.",
+  },
+  {
     title: "Socks, Slides, and a Night I'll Never Forget",
     date: "Apr 2026",
     tag: "Personal",
