@@ -68,7 +68,7 @@ const PROJECTS = [
     descShort: "Orchestrator + specialist sub-agents with allow-listed routing, MCP, and human approval gates.",
     type: "Open source",
     year: "2026",
-    desc: "Public version of my Persistent work. A hierarchical tree of Copilot custom agents: each caller allow-lists its children, sub-agents report a structured status, and edits stay behind least-privilege tools and human approval.",
+    desc: "A hierarchical tree of Copilot custom agents: each caller allow-lists its children, sub-agents report a structured status, and edits stay behind least-privilege tools and human approval.",
     stack: ["Copilot custom agents", "Multi-agent", "MCP", "YAML", "Guardrails"],
     links: [{ label: "github", href: "https://github.com/karthikreddy-7/Agentic-Orchestration-Harness" }],
   },
