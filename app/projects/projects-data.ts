@@ -72,30 +72,6 @@ export type ProjectDetail = {
 const CONTACT_EMAIL = "basupallykarthikreddy@gmail.com"
 
 export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
-  choreo: {
-    slug: "choreo",
-    name: "Choreo",
-    title: "Choreo — multi-agent systems, in production",
-    tagline:
-      "Open-source production layer for LangGraph: budgets, guardrails, retries, evals, and observability for multi-agent AI systems.",
-    type: "Open source",
-    repoStatus: "public",
-    sections: [
-      {
-        label: "What it is",
-        body: "Choreo is the production layer for LangGraph. It helps you build multi-agent AI systems that ship with budgets, guardrails, retries, evals, and observability — not just demos.",
-      },
-      {
-        label: "Status",
-        body: "Early and building in public. Tagline: Multi-agent systems, in production.",
-      },
-    ],
-    stack: ["Python", "LangGraph", "Multi-agent", "Evals", "Observability"],
-    links: [{ label: "github", href: "https://github.com/choreo-ai/choreo" }],
-    artifacts: {},
-    verify: { contactEmail: CONTACT_EMAIL },
-  },
-
   coderag: {
     slug: "coderag",
     name: "CodeRAG",

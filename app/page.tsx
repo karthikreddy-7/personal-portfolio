@@ -73,17 +73,6 @@ const PROJECTS = [
     links: [{ label: "github", href: "https://github.com/karthikreddy-7/Agentic-Orchestration-Harness" }],
   },
   {
-    name: "Choreo",
-    platform: "",
-    slug: "choreo",
-    descShort: "Production layer for LangGraph — multi-agent systems with budgets, guardrails, and evals.",
-    type: "Open source",
-    year: "2026",
-    desc: "Production layer for LangGraph: budgets, guardrails, retries, evals, and observability for multi-agent systems. Early, building in public.",
-    stack: ["Python", "LangGraph", "Multi-agent", "Evals", "Observability"],
-    links: [{ label: "github", href: "https://github.com/choreo-ai/choreo" }],
-  },
-  {
     name: "CodeRAG",
     platform: "",
     slug: "coderag",
@@ -783,18 +772,6 @@ export default function BetaPage() {
               for a GenAI platform with{" "}
               <span className="accent">~15k daily users</span>
               .
-              <span className="block mt-4 muted">
-                Currently building{" "}
-                <a
-                  href="https://github.com/choreo-ai/choreo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="accent-link accent"
-                >
-                  Choreo
-                </a>
-                .
-              </span>
             </div>
           </div>
         </section>
