@@ -11,6 +11,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://basupallykarthikreddy.vercel.app"),
+  // Google Search Console ownership check (URL-prefix property).
+  verification: { google: "y6Tcc7P8bMEpFCkUEpO9I3GW0VnWv8ACELSggkC_OUU" },
   title: "Karthik Reddy · Agentic AI Engineer",
   description:
     "Agentic AI Engineer — multi-agent orchestration, hybrid RAG and evals in production. Lead Software Engineer at Persistent Systems; ex-Nomura (GenAI platform, ~15k daily users).",
