@@ -162,6 +162,13 @@ const EDUCATION = [
 // Curated Medium posts — newest first. Add new ones here as you publish.
 const BLOGS = [
   {
+    title: "Designing Agent Hierarchies in VS Code Copilot",
+    date: "Nov 2026",
+    tag: "Agentic AI",
+    href: "https://medium.com/@basupallykarthikreddy/designing-agent-hierarchies-in-vs-code-copilot-212d70faf4fc",
+    blurb: "Why one agent with every tool is a liability: orchestrators, narrow specialist agents, layered context via hooks, least-privilege tools and human approval.",
+  },
+  {
     title: "AI Engineering Roadmap: A Free Playbook for Builders",
     date: "Aug 2026",
     tag: "AI Engineering",
