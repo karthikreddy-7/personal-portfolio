@@ -117,17 +117,6 @@ const PROJECTS = [
     links: [],
   },
   {
-    name: "CraftMyCV",
-    platform: "",
-    slug: "craftmycv",
-    descShort: "Generate a tailored resume from your profile + a job description.",
-    type: "Personal project",
-    year: "2025",
-    desc: "Paste your background and a job description; get an editable tailored CV. Spring Boot API, React UI, Python AI service.",
-    stack: ["Java 17", "Spring Boot", "React", "TypeScript", "Python", "Docker"],
-    links: [{ label: "github", href: "https://github.com/karthikreddy-7/CraftMyCV" }],
-  },
-  {
     name: "AGRI.AI",
     platform: "",
     slug: "agri-ai",

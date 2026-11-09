@@ -189,28 +189,6 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
     verify: { contactEmail: CONTACT_EMAIL },
   },
 
-  craftmycv: {
-    slug: "craftmycv",
-    name: "CraftMyCV",
-    tagline:
-      "Turn a profile + job description into a tailored resume you can edit in the browser.",
-    type: "Personal project",
-    repoStatus: "public",
-    sections: [
-      {
-        label: "What it does",
-        body: "Spring Boot API and React UI take your details and a JD, then a Python AI service drafts a customized CV with editable templates.",
-      },
-      {
-        label: "Stack",
-        body: "Java 17, Spring Boot, React, TypeScript, Python, Docker.",
-      },
-    ],
-    stack: ["Java 17", "Spring Boot", "React", "TypeScript", "Python", "Docker"],
-    links: [{ label: "github", href: "https://github.com/karthikreddy-7/CraftMyCV" }],
-    artifacts: {},
-    verify: { contactEmail: CONTACT_EMAIL },
-  },
 
   "agri-ai": {
     slug: "agri-ai",
