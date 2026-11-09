@@ -11,14 +11,32 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://basupallykarthikreddy.vercel.app"),
-  title: "Karthik Reddy · AI Engineer",
+  title: "Karthik Reddy · Agentic AI Engineer",
   description:
-    "AI Engineer — multi-agent orchestration, hybrid RAG and evals in production. Lead Software Engineer at Persistent Systems; ex-Nomura (GenAI platform, ~15k daily users).",
+    "Agentic AI Engineer — multi-agent orchestration, hybrid RAG and evals in production. Lead Software Engineer at Persistent Systems; ex-Nomura (GenAI platform, ~15k daily users).",
   openGraph: {
-    title: "Karthik Reddy · AI Engineer",
+    title: "Karthik Reddy · Agentic AI Engineer",
     description: "Multi-agent orchestration, hybrid RAG and evals in production.",
     url: "https://basupallykarthikreddy.vercel.app",
   },
+}
+
+// schema.org Person: lets search engines tie this site to the same person on
+// LinkedIn, GitHub and Medium, so a name search surfaces them together.
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Karthik Reddy Basupally",
+  jobTitle: "Agentic AI Engineer",
+  worksFor: { "@type": "Organization", name: "Persistent Systems" },
+  address: { "@type": "PostalAddress", addressLocality: "Hyderabad", addressCountry: "IN" },
+  url: "https://basupallykarthikreddy.vercel.app",
+  sameAs: [
+    "https://www.linkedin.com/in/basupallykarthikreddy/",
+    "https://github.com/karthikreddy-7",
+    "https://medium.com/@basupallykarthikreddy",
+  ],
+  knowsAbout: ["Agentic AI", "Multi-agent systems", "LLMs", "RAG", "MCP", "LangGraph", "LLM evaluation"],
 }
 
 export default function RootLayout({
@@ -46,6 +64,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         {children}
         {modal}
         <Analytics />

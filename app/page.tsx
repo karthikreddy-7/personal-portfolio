@@ -781,14 +781,14 @@ export default function BetaPage() {
               {/* pb-[2px]: the + glyph's ink sits ~1px below its line box's
                   center (measured), so bias the box to optically center it. */}
               <span className="accent shrink-0 w-9 h-9 pb-[2px] rounded-xl bg-[#f4f1ec] ring-1 ring-black/10 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.2)] grid place-items-center text-[20px] leading-none">+</span>
-              <span>AI Engineer · agents &amp; RAG in production.</span>
+              <span>Agentic AI Engineer · agents &amp; RAG in production.</span>
             </p>
 
             {/* Full description on every breakpoint (the phone's Notion-style
                 page body); the roles sentence is sm+ only — phones carry it
                 in the hero-open line instead. */}
             <div className="hero-desc display font-light text-[16px] sm:text-[clamp(16px,1.7vw,20px)] mt-0 sm:mt-7 lg:mt-8 leading-[1.5] max-w-[44ch]">
-              AI Engineer. Lead Software Engineer at{" "}
+              Agentic AI Engineer. Lead Software Engineer at{" "}
               <span className="accent">Persistent</span>
               , building multi-agent systems. Before that, hybrid RAG and agents
               for a GenAI platform with{" "}
@@ -1121,7 +1121,7 @@ export default function BetaPage() {
                 Let&rsquo;s talk agents<span className="accent">.</span>
               </h3>
               <p className="mt-2 xs:mt-5 leading-relaxed text-[14px] xs:text-[15px] max-w-[58ch] mono">
-                Open to AI Engineer conversations — production agents, retrieval, and evals.
+                Open to Agentic AI Engineer conversations — production agents, retrieval, and evals.
               </p>
               <p className="mt-3 xs:mt-4 leading-relaxed text-[14px] xs:text-[15px] mono">
                 <a href="mailto:basupallykarthikreddy@gmail.com" className="accent-link accent">
